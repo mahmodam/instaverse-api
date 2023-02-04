@@ -30,6 +30,10 @@ app.use("/api/posts", Posts);
 
 app.use("/api/user", User);
 
+app.get("/", (req, res) => {
+  res.send("Hello to Memories API");
+});
+
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
